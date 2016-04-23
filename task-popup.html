@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>popup</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		.popup{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			box-sizing: border-box;
+			width: 302px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			transform: translate(-50%,-50%);
+		}
+		.popup .tt{
+			position: relative;
+			padding: 0 20px;
+			height: 40px;
+			font: 14px/40px "microsoft yahei";
+			background-color: #eee;
+		}
+		.popup .tt p{
+			overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+		.popup .tt img{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 10px;
+			height: 10px;
+			cursor: pointer;
+		}
+		.popup .ct{
+			padding: 20px;
+			font: 12px "SimSun";
+		}
+		.popup .ct p{
+			margin-bottom: 20px;
+			line-height: 1.5em;
+		}
+		.popup .ct button{
+			display: block;
+			margin: 0 auto;
+			width: 80px;
+			height: 30px;
+			text-align: center;
+			color: #fff;
+			border-radius: 5px;
+			background-color: #2e7ecb;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup">
+		<div class="tt">
+		<p>标题栏-测试隐藏11111111111111111111</p>
+		<img src="x.png" alt="close icon" />
+		</div>
+		<div class="ct">
+			<p>内容与段落</p>
+			<button>确定</button>
+		</div>
+	</div>
+</body>
+</html>
