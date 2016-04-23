@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0; 
+        }
+        .tab{
+            box-sizing: border-box;
+            margin: 20px auto;
+            width: 574px;
+            font:14px "microsoft yahei";
+            border: 1px solid #999;  
+        }
+        .tab .tt{
+            list-style:none;
+        }
+        .tab .tt li{
+            display: inline-block;
+            box-sizing: border-box;
+            width: 33.33%;
+            line-height: 3em;
+            text-align: center;
+            border-left:1px solid #cecece;
+            border-bottom:1px solid #cecece;
+            background-color: #f1f1f1;
+        }
+        .tab .tt .active{
+            border-bottom:none;
+            background-color: #fff;
+        }
+        .tab .tt li a{
+            color:#000;
+            text-decoration: none;
+        }
+        .tab .ct div{
+            display: none;
+            padding: 20px;
+            height: 80px;
+        }
+        .tab .ct .on{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 课程选项 -->
+    <div class="tab course"> 
+        <ul class="tt">
+            <li class="active"><a href="#">课程</a></li
+            ><li><a href="#">学习计划</a></li
+            ><li><a href="#">技能图谱</a></li>
+        </ul>
+        <div class="ct">
+            <div class="on">课程内容</div>
+            <div>学习计划内容</div>
+            <div>技能图谱内容</div>
+        </div>
+    </div>
+ 
+    <!-- 学习计划选项 -->
+    <div class="tab plan"> 
+        <ul class="tt">
+            <li><a href="#">课程</a></li
+            ><li class="active"><a href="#">学习计划</a></li
+            ><li><a href="#">技能图谱</a></li>
+        </ul>
+        <div class="ct">
+            <div>课程内容</div>
+            <div class="on">学习计划内容</div>
+            <div>技能图谱内容</div>
+        </div>
+    </div>
+ 
+    <!-- 技能图谱选项 -->
+    <div class="tab skill"> 
+        <ul class="tt">
+            <li><a href="#">课程</a></li
+            ><li><a href="#">学习计划</a></li
+            ><li  class="active"><a href="#">技能图谱</a></li>
+        </ul>
+        <div class="ct">
+            <div>课程内容</div>
+            <div>学习计划内容</div>
+            <div class="on">技能图谱内容</div>
+        </div>
+    </div>
+</body>
+</html>
+​
